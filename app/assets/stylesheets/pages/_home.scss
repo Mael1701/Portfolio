@@ -1,0 +1,104 @@
+.home {
+  background-image: linear-gradient(to right top, #41efff, #00d5ff, #00b9ff, #009bff, #0079ee, #007def, #0080f0, #0084f1, #00abfd, #00cbf1, #17e7db, #9cfdca);
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  width: auto;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.wave {
+  -webkit-animation-name: wave-animation;
+  animation-name: wave-animation;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block
+}
+
+@-webkit-keyframes wave-animation {
+  0% {
+      transform: rotate(0deg)
+  }
+
+  10% {
+      transform: rotate(14deg)
+  }
+
+  20% {
+      transform: rotate(-8deg)
+  }
+
+  30% {
+      transform: rotate(14deg)
+  }
+
+  40% {
+      transform: rotate(-4deg)
+  }
+
+  50% {
+      transform: rotate(10deg)
+  }
+
+  60% {
+      transform: rotate(0deg)
+  }
+
+  to {
+      transform: rotate(0deg)
+  }
+}
+
+@keyframes wave-animation {
+  0% {
+      transform: rotate(0deg)
+  }
+
+  10% {
+      transform: rotate(14deg)
+  }
+
+  20% {
+      transform: rotate(-8deg)
+  }
+
+  30% {
+      transform: rotate(14deg)
+  }
+
+  40% {
+      transform: rotate(-4deg)
+  }
+
+  50% {
+      transform: rotate(10deg)
+  }
+
+  60% {
+      transform: rotate(0deg)
+  }
+
+  to {
+      transform: rotate(0deg)
+  }
+}
