@@ -1,14 +1,17 @@
 
 .navbar {
-  z-index: 1000;
+  display: flex;
 }
 
 .navbar-lewagon {
   justify-content: space-between;
+  align-items: center;
 }
+
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
+  color: white;
 }
 
 .navbar-lewagon .navbar-brand img {
@@ -29,8 +32,9 @@
 
 .nav-link {
   color: white !important;
+  justify-content: flex-end;
 }
 
 .nav-item :hover {
-  color: rgb(77, 107, 158) !important;
+  color: blue !important;
 }
