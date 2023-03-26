@@ -17,6 +17,16 @@
  @import "font-awesome";
 
  .btn {
-  color: white;
-  background-color: blue;
+  color: blue;
+  background-color: transparent;
+  border: 1px solid blue;
+  padding: 1.25rem 1.75rem;
+  text-decoration: none;
 }
+
+.anime-container .dot{
+  position: fixed;
+  border-radius: 50%;
+  background-color: hsl(60, 100%, 80%);
+}
+
