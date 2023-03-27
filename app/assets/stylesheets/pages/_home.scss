@@ -4,133 +4,25 @@
   height: 100vh;
 }
 
-.txt-rotate {
-  color: blue;
-}
-
-.banner {
-  background-size: cover;
-  background-position: center;
-  padding: 150px 0;
-  width: auto;
-}
-
-.banner h1 {
-  margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 60px;
-  font-weight: bold;
-}
-
 .btn {
   margin-top: 15px;
 }
 
-.p1 {
-  padding-top: 15px;
-}
-
 .About  {
-  background-size: cover;
-  background-position: center;
-  width: auto;
   background-color: rgba(0, 5, 10, 2);
+  min-height: 100vh;
+  height: 100vh;
 }
 
 h2 {
   color: white;
+  font-size: 45px;
+  color: blue;
 }
 
 .p2 {
-  font-size: 20px;
-  color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-}
-
-.banner p {
   font-size: 30px;
   color: white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-}
-
-.wave {
-  -webkit-animation-name: wave-animation;
-  animation-name: wave-animation;
-  -webkit-animation-duration: 2.5s;
-  animation-duration: 2.5s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block
-}
-
-@-webkit-keyframes wave-animation {
-  0% {
-      transform: rotate(0deg)
-  }
-
-  10% {
-      transform: rotate(14deg)
-  }
-
-  20% {
-      transform: rotate(-8deg)
-  }
-
-  30% {
-      transform: rotate(14deg)
-  }
-
-  40% {
-      transform: rotate(-4deg)
-  }
-
-  50% {
-      transform: rotate(10deg)
-  }
-
-  60% {
-      transform: rotate(0deg)
-  }
-
-  to {
-      transform: rotate(0deg)
-  }
-}
-
-@keyframes wave-animation {
-  0% {
-      transform: rotate(0deg)
-  }
-
-  10% {
-      transform: rotate(14deg)
-  }
-
-  20% {
-      transform: rotate(-8deg)
-  }
-
-  30% {
-      transform: rotate(14deg)
-  }
-
-  40% {
-      transform: rotate(-4deg)
-  }
-
-  50% {
-      transform: rotate(10deg)
-  }
-
-  60% {
-      transform: rotate(0deg)
-  }
-
-  to {
-      transform: rotate(0deg)
-  }
 }
