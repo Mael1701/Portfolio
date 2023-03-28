@@ -13,6 +13,11 @@
   font-weight: bold;
 }
 
+h1:hover {
+  position: relative;
+  z-index: 10;
+}
+
 .banner p {
   font-size: 30px;
   color: white;
@@ -22,6 +27,11 @@
 
 .p1 {
   padding-top: 15px;
+}
+
+.p1:hover {
+  position: relative;
+  z-index: 10;
 }
 
 .txt-rotate {

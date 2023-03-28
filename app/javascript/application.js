@@ -3,3 +3,4 @@ import "@hotwired/turbo-rails"
 import "controllers"
 import "path/to/cursor";
 import "./packs/animation"
+

@@ -3,9 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let container = document.querySelector(".anime-container");
 
 let sparks = [];
-let sparksIndex = 0;
 
-let a = 10;
 
 let sparkCount = 20;
 let sparkParticleCount = 2;
@@ -90,7 +88,7 @@ for (let i = 0; i <= sparkCount; i += 1) {
     delay: anime.stagger(8),
     opacity: [
       { value: 0, duration: 0 },
-      { value: 1, duration: 40 },
+      { value: 1, duration: 0 },
       {
         value: 0,
         duration: function () {
@@ -98,7 +96,7 @@ for (let i = 0; i <= sparkCount; i += 1) {
         },
       },
     ],
-    scale: { value: 0.5, duration: 500 },
+    scale: { value: 0.5, duration: 0 },
     translateX: {
       value: function () {
         return anime.random(-30, 30);
@@ -115,48 +113,4 @@ for (let i = 0; i <= sparkCount; i += 1) {
   sparks.push(spark);
 }
 
-// Mouse trail bit
-let lastFrameTime = 0;
-const navbar = document.getElementById("navbar");
-const hireMeButton = document.getElementById("hire-me-button");
-let enableSparks = true;
-
-navbar.addEventListener("mouseenter", () => {
-  enableSparks = false;
-});
-
-navbar.addEventListener("mouseleave", () => {
-  enableSparks = true;
-});
-
-hireMeButton.addEventListener("mouseenter", () => {
-  enableSparks = false;
-});
-
-hireMeButton.addEventListener("mouseleave", () => {
-  enableSparks = true;
-});
-
-window.addEventListener(
-  "mousemove",
-  function (e) {
-    if (!enableSparks) return;
-
-    const currentFrameTime = performance.now();
-    const timeSinceLastFrame = currentFrameTime - lastFrameTime;
-
-    if (timeSinceLastFrame >= 16) {
-      anime.set(sparks[sparksIndex].els, {
-        left: e.pageX,
-        top: e.pageY,
-      });
-      sparks[sparksIndex].anime.restart();
-      sparksIndex++;
-      if (sparksIndex == sparks.length) sparksIndex = 0;
-
-      lastFrameTime = currentFrameTime;
-    }
-  },
-  false
-);
 });

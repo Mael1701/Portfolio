@@ -17,40 +17,24 @@
  @import "font-awesome";
 
  .btn {
+  position: relative;
+  z-index: 10;
   color: blue;
   background-color: transparent;
   border: 1px solid blue;
   padding: 1.25rem 1.75rem;
   text-decoration: none;
+  margin-top: 15px;
 }
 
-.profil {
-  width: 310px;
-  height: 310px;
-  border-radius: 50%;
-  margin-left: 20px;
-  order: 1;
+.btn:hover {
+  position: relative;
+  z-index: 10;
+  color: black;
+  background-color: blue;
+  border: 1px solid blue;
+  padding: 1.25rem 1.75rem;
+  text-decoration: none;
+  margin-top: 15px;
 }
 
-.about-content {
-  display: flex;
-  justify-content: center;
- }
-
-/* Pour les appareils mobiles avec une largeur d'écran maximale de 767px */
-@media (max-width: 767px) {
-  .about-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .profil {
-    order: 0;
-    margin-right: 0;
-    margin-bottom: 20px; /* Ajouter une marge en bas pour séparer l'image du paragraphe */
-  }
-
-  .p2 {
-    text-align: justify;
-  }
-}

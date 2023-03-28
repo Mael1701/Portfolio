@@ -12,5 +12,13 @@ environment.loaders.prepend('css', {
   use: [MiniCssExtractPlugin.loader, 'css-loader'],
 });
 
-module.exports = environment;
+environment.plugins.append(
+  'Provide',
+  new webpack.ProvidePlugin({
+    $: 'jquery',
+    jQuery: 'jquery',
+    'window.jQuery': 'jquery',
+  })
+);
 
+module.exports = environment;
