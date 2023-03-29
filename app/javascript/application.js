@@ -4,3 +4,4 @@ import "controllers"
 import "path/to/cursor";
 import "./packs/animation"
 
+//= require bootstrap
