@@ -10,6 +10,6 @@ Rails.application.routes.draw do
   get "skills", to: "pages#skills"
   get "projects", to: "pages#projects"
   get "contact", to: "pages#contact"
-
+  get "contacts", to: "contacts#new"
 
 end

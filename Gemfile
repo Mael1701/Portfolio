@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
+gem 'mail_form'
 
 gem 'bootstrap', '~> 5.1.3'
 gem "sassc-rails"

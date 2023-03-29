@@ -1,32 +1,24 @@
-<%= form_with(model: @contact, local: true) do |form| %>
-  <% if @contact.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@contact.errors.count, "erreur") %> trouvée(s) :</h2>
-      <ul>
-        <% @contact.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
+<%= render "components/navbar" %>
+<div class="container">
+  <h1>Contact Form</h1>
+  <%= form_for @contact do |f| %>
+    <div class="col-md-6">
+      <%= f.label :name %></br>
+      <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
+
+      <%= f.label :email %></br>
+      <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
+
+      <%= f.label :message %></br>
+      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
+            placeholder: "Send me a message"%></br>
+
+      <div class= "d-none">
+        <%= f.label :nickname %>
+        <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+      </div>
+
+      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :name, "Nom" %>
-    <%= form.text_field :name %>
-  </div>
-
-  <div class="field">
-    <%= form.label :email, "Email" %>
-    <%= form.email_field :email %>
-  </div>
-
-  <div class="field">
-    <%= form.label :message, "Message" %>
-    <%= form.text_area :message %>
-  </div>
-
-<div class="actions">
-  <%= form.submit "Envoyer" %>
 </div>
-<% end %>
-

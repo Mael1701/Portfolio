@@ -1,2 +1,12 @@
-<h1>Contacts#create</h1>
-<p>Find me in app/views/contacts/create.html.erb</p>
+<%= render "components/navbar" %>
+<div class="container">
+  <h1>Contact Form</h1>
+
+  <h3>Thank you for your message!</h3>
+    <div class="container">
+  <br>
+  <% flash.each do |key, message| %>
+    <p class="alert alert-<%= key %>"><%= message %></p>
+  <% end %>
+</div>
+</div>

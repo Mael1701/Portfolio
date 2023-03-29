@@ -15,6 +15,7 @@
  */
  @import "bootstrap/scss/bootstrap";
  @import "font-awesome";
+ //= require bootstrap/dist/css/bootstrap
 
  .btn {
   position: relative;
@@ -37,4 +38,3 @@
   text-decoration: none;
   margin-top: 15px;
 }
-

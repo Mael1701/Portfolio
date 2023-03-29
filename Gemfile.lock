@@ -123,6 +123,9 @@ GEM
       net-imap
       net-pop
       net-smtp
+    mail_form (1.10.0)
+      actionmailer (>= 5.2)
+      activemodel (>= 5.2)
     marcel (1.0.2)
     matrix (0.4.2)
     method_source (1.0.0)
@@ -249,6 +252,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   letter_opener
+  mail_form
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.2)
   sassc-rails
