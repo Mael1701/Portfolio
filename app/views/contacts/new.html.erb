@@ -1,6 +1,7 @@
 <%= render "components/navbar" %>
+<div class="contact1">
 <div class="container">
-  <h1>Contact Form</h1>
+  <h2>Contact Form</h2>
   <%= form_for @contact do |f| %>
     <div class="col-md-6">
       <%= f.label :name %></br>
@@ -21,4 +22,5 @@
       <%= f.submit 'Send Message', class: 'btn btn-primary' %>
     </div>
   <% end %>
+  </div>
 </div>
