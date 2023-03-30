@@ -15,6 +15,10 @@
  */
  @import "bootstrap/scss/bootstrap";
  @import "font-awesome";
+
+
+
+
  //= require bootstrap/dist/css/bootstrap
 
  .btn {
@@ -37,17 +41,4 @@
   padding: 1.25rem 1.75rem;
   text-decoration: none;
   margin-top: 15px;
-}
-
-.contact1 {
-  color: blue;
-  min-height: 100vh;
-  height: 100vh;
-  background-color: rgba(0, 5, 10, 2);
-}
-
-.confirmation {
-  min-height: 100vh;
-  height: 100vh;
-  background-color: rgba(0, 5, 10, 2);
 }

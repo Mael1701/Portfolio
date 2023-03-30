@@ -1,26 +1,50 @@
-<%= render "components/navbar" %>
-<div class="contact1">
-<div class="container">
-  <h2>Contact Form</h2>
-  <%= form_for @contact do |f| %>
-    <div class="col-md-6">
-      <%= f.label :name %></br>
-      <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
+<div class="contact">
+  <%= render "components/navbar" %>
+  <div class="anime-container" id="content-area">
+  <h2 class="section-header">Contact</h2>
+    <%= form_for @contact do |f| %>
+    <div class="contact-wrapper">
+       <div class="container-contact">
+         <%= f.text_field  :name, required: true, id:"name", class: "form-control",
+         placeholder: "NAME" %></br>
 
-      <%= f.label :email %></br>
-      <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
+         <%= f.text_field :email, id:"email", required: true, class: "form-control",
+         placeholder: "EMAIL" %></br>
 
-      <%= f.label :message %></br>
-      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
-            placeholder: "Send me a message"%></br>
+         <%= f.text_area :message, rows: 10, cols: 40, required: true, class: "form-control",
+               placeholder: "MESSAGE"%></br>
 
-      <div class= "d-none">
-        <%= f.label :nickname %>
-        <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+         <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+       </div>
+     <% end %>
+
+      <div class="direct-contact-container">
+
+            <ul class="contact-list">
+              <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Quimper, France</span></i></li>
+
+              <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:0610239530" title="Give me a call">(+33) 610239530</a></span></i></li>
+
+              <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:maelmicout.dev@gmail.com" title="Send me an email">maelmicout.dev@gmail.com</a></span></i></li>
+
+            </ul>
+
+            <hr>
+            <ul class="social-media-list">
+              <li><a href="https://github.com/Mael1701" target="_blank" >
+                <i class="fab fa-github"></i></a>
+              </li>
+              <li><a href="https://twitter.com/MMicout" target="_blank" class="contact-icon">
+                <i class="fab fa-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li><a href="https://www.instagram.com/maelmicout.dev/" target="_blank" class="contact-icon">
+                <i class="fab fa-instagram" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+            <hr>
+
+            <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
       </div>
-
-      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
     </div>
-  <% end %>
-  </div>
+    </div>
 </div>
