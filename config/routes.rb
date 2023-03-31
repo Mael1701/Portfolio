@@ -8,8 +8,7 @@ Rails.application.routes.draw do
   root to: "pages#home"
   get "about", to: "pages#about"
   get "skills", to: "pages#skills"
-  get "projects", to: "pages#projects"
-  get "contact", to: "pages#contact"
-  get "contacts", to: "contacts#new"
+  get "project", to: "pages#projects"
+  get "contact", to: "contacts#new"
 
 end

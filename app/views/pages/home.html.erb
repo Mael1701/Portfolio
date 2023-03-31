@@ -9,8 +9,10 @@
             data-rotate='[ "Mael Micout", "Full-stack developer" ]'></span>
           </h1>
           <p class="p1">I’m passionate about solving problems, challenges and helping to improve things around me.</p>
-          <a class="btn btn-flat front-btn" href="./contacts/new" id="hire-me-button">Hire me !</a>
+          <a><%= link_to "Hire me!", contact_path, class: "btn btn-flat front-btn", id:"hire-me-button" %></a>
         </div>
       </div>
     </div>
 </div>
+
+<%= link_to "Contact", contact_path, class: "btn btn-flat front-btn", id:"hire-me-button" %>
