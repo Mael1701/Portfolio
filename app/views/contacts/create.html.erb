@@ -2,11 +2,15 @@
 <%= render "components/navbar" %>
 <div class="container">
 <div class="anime-container" id="content-area">
-  <h2>Thank you for your message!</h2>
     <div class="container">
   <br>
   <% flash.each do |key, message| %>
-    <p class="alert alert-<%= key %>"><%= message %></p>
+    <div class="col-sm-12">
+        <div class="alert fade alert-simple alert-success alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered show">
+          <i class="start-icon far fa-check-circle faa-tada animated"></i>
+          <strong class="font__weight-semibold">Well done!</strong> Thank you for your message!
+        </div>
+      </div>
   <% end %>
 </div>
 </div>

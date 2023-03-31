@@ -131,7 +131,7 @@ textarea {
 }
 
 .social-media-list li a {
-  color: #fff;
+  color: blue;
 }
 
 .social-media-list li {
@@ -163,7 +163,7 @@ textarea {
 }
 
 .social-media-list li:hover {
-  background-color: #fff;
+  background-color: blue;
 }
 
 .social-media-list li:hover:after {
@@ -245,4 +245,83 @@ textarea {
     height: 55px;
     line-height: 55px;
   }
+}
+
+
+.alert>.start-icon {
+  margin-right: 0;
+  min-width: 20px;
+  text-align: center;
+}
+
+.alert>.start-icon {
+  margin-right: 5px;
+}
+
+
+.alert-simple.alert-success
+{
+border: 1px solid blue;
+  background-color: rgba(28, 7, 149, 0.122);
+  box-shadow: 0px 0px 2px #07113d;
+  color: blue;
+text-shadow: 2px 1px #00040a;
+transition:0.5s;
+cursor:pointer;
+position: relative;
+z-index: 10;
+}
+.alert-success:hover{
+background-color: rgba(9, 7, 126, 0.35);
+transition:0.5s;
+}
+
+.alert:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: calc(100% - 44px);
+  border-left: 1px solid;
+  border-right: 2px solid;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  left: 0;
+  top: 50%;
+  transform: translate(0,-50%);
+    height: 20px;
+}
+
+.fa-times
+{
+-webkit-animation: blink-1 2s infinite both;
+        animation: blink-1 2s infinite both;
+}
+
+
+/**
+* ----------------------------------------
+* animation blink-1
+* ----------------------------------------
+*/
+@-webkit-keyframes blink-1 {
+0%,
+50%,
+100% {
+  opacity: 1;
+}
+25%,
+75% {
+  opacity: 0;
+}
+}
+@keyframes blink-1 {
+0%,
+50%,
+100% {
+  opacity: 1;
+}
+25%,
+75% {
+  opacity: 0;
+}
 }
