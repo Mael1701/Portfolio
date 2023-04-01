@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   root to: "pages#home"
   get "about", to: "pages#about"
-  get "skills", to: "pages#skills"
   get "project", to: "pages#projects"
   get "contact", to: "contacts#new"
 

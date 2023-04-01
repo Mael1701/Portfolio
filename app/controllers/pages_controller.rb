@@ -5,13 +5,10 @@ class PagesController < ApplicationController
   def about
   end
 
-  def skills
-  end
-
   def projects
   end
 
   def contact
   end
-  
+
 end
