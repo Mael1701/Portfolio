@@ -3,5 +3,13 @@ import "@hotwired/turbo-rails"
 import "controllers"
 import "path/to/cursor";
 import "./animation"
-
+import "bootstrap"
+import "bootstrap/js/src/collapse"
+//= require jquery3
+//= require popper
 //= require bootstrap
+//= require rails-ujs
+//= require turbolinks
+//= require_tree .
+//= require bootstrap.bundle.min
+

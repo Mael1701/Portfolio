@@ -18,7 +18,10 @@ environment.plugins.append(
     $: 'jquery',
     jQuery: 'jquery',
     'window.jQuery': 'jquery',
+    Popper: ['popper.js', 'default'],
+    Bootstrap: ['bootstrap', 'window.bootstrap'],
   })
+
 );
 
 module.exports = environment;
