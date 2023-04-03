@@ -8,13 +8,13 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: mael1701
+  username: Mael1701
   password: Lesconil29
   host: localhost
 
 development:
   <<: *default
-  database: portfolio-mael-micout
+  database: your_project_name_development
 
 test:
   <<: *default
@@ -22,7 +22,7 @@ test:
 
 production:
   <<: *default
-  database:  portfolio-mael-micout
+  database: your_project_name_production
   username: <%= ENV['POSTGRESQL_USERNAME'] %>
   password: <%= ENV['POSTGRESQL_PASSWORD'] %>
   host: <%= ENV['POSTGRESQL_HOST'] %>
