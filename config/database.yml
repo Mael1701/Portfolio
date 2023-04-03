@@ -10,7 +10,7 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: mael1701
   password: Lesconil29
-  host: postgresql-rectangular-79077
+  host: localhost
 
 development:
   <<: *default
