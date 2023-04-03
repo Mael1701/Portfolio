@@ -1,0 +1,14 @@
+{
+  "animation.js": "/packs/js/animation-61d4398b85b1438ac5bf.js",
+  "animation.js.map": "/packs/js/animation-61d4398b85b1438ac5bf.js.map",
+  "entrypoints": {
+    "animation": {
+      "js": [
+        "/packs/js/animation-61d4398b85b1438ac5bf.js"
+      ],
+      "js.map": [
+        "/packs/js/animation-61d4398b85b1438ac5bf.js.map"
+      ]
+    }
+  }
+}
